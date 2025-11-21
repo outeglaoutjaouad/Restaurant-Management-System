@@ -31,7 +31,8 @@ public class Client {
     public void afficherCommandes() {
         System.out.println("Commandes de " + nom + " :");
         for (Commande c : commandes) {
-            System.out.println("- Commande ID: " + c.getId() + ", Total: " + c.getTotal());
+            System.out.println("- Commande id: " + c.getId() + ", Total: " + c.getTotal());
         }
+
     }
 }
