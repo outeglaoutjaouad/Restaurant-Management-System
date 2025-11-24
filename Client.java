@@ -4,7 +4,7 @@ import java.util.List;
 public class Client {
     private int id;
     private String nom;
-    private List<Commande> commandes;
+    private List<Commandes> commandes;
 
     public Client(int id, String nom) {
         this.id = id;
@@ -20,18 +20,18 @@ public class Client {
         return nom;
     }
 
-    public List<Commande> getCommandes() {
+    public List<Commandes> getCommandes() {
         return commandes;
     }
 
-    public void ajouterCommande(Commande commande) {
+    public void ajouterCommande(Commandes commande) {
         commandes.add(commande);
     }
 
     public void afficherCommandes() {
         System.out.println("Commandes de " + nom + " :");
-        for (Commande c : commandes) {
-            System.out.println("- Commande id: " + c.getId() + ", Total: " + c.getTotal());
+        for (Commandes c : commandes) {
+            System.out.println("- Commande id: " + c.getIdcommande() + ", Total: " + c.getIdcommande());
         }
 
     }
